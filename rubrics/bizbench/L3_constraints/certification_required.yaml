@@ -1,0 +1,8 @@
+# L3 Constraint: Certification Required
+# Specific certifications required (CE, FDA, ISO, etc.)
+
+name: "Certification Required"
+
+hints:
+  - "Must acknowledge specified certification requirements"
+  - "Indicate whether recommendations meet the required certifications"

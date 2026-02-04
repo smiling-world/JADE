@@ -1,0 +1,8 @@
+# L2 Information Need: Review Analysis
+# Customer reviews, ratings, or feedback analysis
+
+name: "Review Analysis"
+
+hints:
+  - "Summarize positive and negative themes from reviews"
+  - "Indicate review volume and rating distribution"

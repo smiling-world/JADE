@@ -1,0 +1,115 @@
+"""Azure OpenAI LLM client implementation."""
+
+import os
+import time
+import random
+from typing import List, Dict, Optional, Any
+
+from openai import AzureOpenAI, APIError, APIConnectionError, APITimeoutError
+
+from jade.llm.base import BaseLLMClient
+
+
+class AzureOpenAIClient(BaseLLMClient):
+    """Azure OpenAI API client implementation."""
+    
+    def __init__(
+        self,
+        model_name: str = "gpt-4o",
+        api_key: Optional[str] = None,
+        azure_endpoint: Optional[str] = None,
+        api_version: str = "2024-02-15-preview",
+        default_headers: Optional[Dict[str, str]] = None,
+        temperature: float = 0.7,
+        max_tokens: int = 4096,
+        max_retries: int = 3,
+        **kwargs
+    ):
+        """
+        Initialize Azure OpenAI client.
+        
+        Args:
+            model_name: Deployment name in Azure
+            api_key: Azure API key
+            azure_endpoint: Azure endpoint URL
+            api_version: API version
+            default_headers: Default headers for requests
+            temperature: Sampling temperature
+            max_tokens: Maximum tokens to generate
+            max_retries: Number of retry attempts
+            **kwargs: Additional configuration
+        """
+        super().__init__(model_name, temperature, max_tokens, **kwargs)
+        
+        self.api_key = api_key or os.environ.get("AZURE_OPENAI_API_KEY")
+        self.azure_endpoint = azure_endpoint or os.environ.get("AZURE_OPENAI_ENDPOINT")
+        self.api_version = api_version
+        self.default_headers = default_headers or {}
+        self.max_retries = max_retries
+        self._client = None
+    
+    def get_client(self) -> AzureOpenAI:
+        """Get or create Azure OpenAI client instance."""
+        if self._client is None:
+            self._client = AzureOpenAI(
+                api_key=self.api_key,
+                azure_endpoint=self.azure_endpoint,
+                api_version=self.api_version,
+                default_headers=self.default_headers,
+                timeout=120.0,
+            )
+        return self._client
+    
+    def chat_completion(
+        self,
+        messages: List[Dict[str, str]],
+        temperature: Optional[float] = None,
+        max_tokens: Optional[int] = None,
+        stop: Optional[List[str]] = None,
+        **kwargs
+    ) -> str:
+        """
+        Generate chat completion using Azure OpenAI API.
+        
+        Args:
+            messages: List of message dicts
+            temperature: Override default temperature
+            max_tokens: Override default max_tokens
+            stop: Stop sequences
+            **kwargs: Additional parameters
+            
+        Returns:
+            Generated text response
+        """
+        client = self.get_client()
+        temp = temperature if temperature is not None else self.temperature
+        tokens = max_tokens if max_tokens is not None else self.max_tokens
+        
+        base_sleep_time = 1
+        for attempt in range(self.max_retries):
+            try:
+                response = client.chat.completions.create(
+                    model=self.model_name,
+                    messages=messages,
+                    temperature=temp,
+                    max_tokens=tokens,
+                    stop=stop,
+                    **kwargs
+                )
+                content = response.choices[0].message.content
+                if content and content.strip():
+                    return content.strip()
+                    
+            except (APIError, APIConnectionError, APITimeoutError) as e:
+                print(f"Azure OpenAI API error (attempt {attempt + 1}/{self.max_retries}): {e}")
+            except Exception as e:
+                print(f"Unexpected error (attempt {attempt + 1}/{self.max_retries}): {e}")
+            
+            if attempt < self.max_retries - 1:
+                sleep_time = base_sleep_time * (2 ** attempt) + random.uniform(0, 1)
+                sleep_time = min(sleep_time, 30)
+                print(f"Retrying in {sleep_time:.2f} seconds...")
+                time.sleep(sleep_time)
+        
+        return "Error: Failed to get response from Azure OpenAI API after all retries."
+

@@ -1,0 +1,15 @@
+# GPT-4 评估配置
+model: "your-model-name"
+dataset: "core"
+threads: 3
+timeout: 600.0
+stream: true
+use_optimized: true
+output_dir: "cache/report/your-model-name"
+limit: 30
+verbose: false
+prefix:
+  zh: "直接回答以下问题，不要反问。引用网页时注明来源。"
+  en: "Answer the following question directly. Do not ask clarifying questions. Cite sources when referencing web pages."
+  fr: "Répondez directement à la question suivante. Ne posez pas de questions de clarification. Citez les sources lors de la référence aux pages Web."
+  ko: "다음 질문에 직접 답변하세요. 명확한 질문을 하지 마세요. 웹 페이지를 참조할 때 출처를 명시하세요."

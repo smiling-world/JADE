@@ -1,0 +1,8 @@
+# L3 Constraint: Region Specific
+# Specific target market or region requirements
+
+name: "Region Specific"
+
+hints:
+  - "Tailor recommendations to specified target market/region"
+  - "Consider region-specific regulations and preferences"

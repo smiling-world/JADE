@@ -1,0 +1,9 @@
+# L2 Information Need: Price Comparison
+# Price ranges, cost structures, or profit margins
+
+name: "Price Comparison"
+
+hints:
+  - "Specify price scope (unit/landed/retail vs wholesale)"
+  - "Indicate currency and source of pricing"
+  - "Explain what drives price differences"

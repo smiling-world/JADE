@@ -1,0 +1,143 @@
+# =============================================================================
+# Agent Settings
+# =============================================================================
+agent:
+  # Agent type: "genai" for GenAI Native Agent
+  agent_type: genai
+  
+  # GenAI-specific options (ONLY for genai agent)
+  genai_use_search: true       # Enable GoogleSearch tool
+  genai_use_url_context: true  # Enable UrlContext tool
+  
+  # Enable verbose console output
+  verbose: true
+  
+  # Directory for log files
+  log_dir: logs
+  
+  # Directory for output files
+  output_dir: output
+  
+  # Enable file logging
+  enable_logging: true
+  
+  # Concurrent verification tasks (1 = sequential)
+  # GenAI agent supports higher concurrency than ReAct agent
+  verify_concurrency: 5
+
+# =============================================================================
+# GenAI Settings (REQUIRED for GenAI Agent)
+# =============================================================================
+# GenAI agent requires Google GenAI API configuration.
+# These settings are separate from the LLM settings because GenAI agent
+# uses the native google-genai SDK directly, not through the LLM abstraction.
+genai:
+  # Model name. Use env: GENAI_MODEL_NAME (e.g. gemini-3-flash-preview)
+  model_name: "${GENAI_MODEL_NAME}"
+  
+  # API key for GenAI (REQUIRED). Use env: GENAI_API_KEY or ${GENAI_API_KEY} in YAML.
+  api_key: "${GENAI_API_KEY}"
+  
+  # Base URL for GenAI API. Use env: GENAI_BASE_URL or ${GENAI_BASE_URL} in YAML.
+  base_url: "${GENAI_BASE_URL}"
+  
+  # API version. Use env: GENAI_API_VERSION (e.g. v1)
+  api_version: "${GENAI_API_VERSION}"
+  
+  # Custom headers (JSON from env GENAI_CUSTOM_HEADERS, e.g. {"empId":"...","iai-tag":"..."})
+  custom_headers: "${GENAI_CUSTOM_HEADERS}"
+  
+  # Generation parameters
+  temperature: 0.3
+  max_retries: 3
+
+# =============================================================================
+# LLM Settings (for checklist generation and reasoning scoring)
+# =============================================================================
+# Note: This LLM is used for checklist generation and reasoning item scoring,
+# NOT for evidence verification (which uses GenAI agent with native tools).
+llm:
+  client_type: custom
+  model_name: "${LLM_MODEL_NAME}"
+  custom_api_key: "${CUSTOM_API_KEY}"
+  custom_endpoint: "${CUSTOM_ENDPOINT}"
+  custom_api_version: "${LLM_CUSTOM_API_VERSION}"
+  custom_headers: "${LLM_CUSTOM_HEADERS}"
+  max_retries: 1
+  supports_temperature: false
+  supports_max_tokens: false
+
+
+# =============================================================================
+# Evaluation Settings
+# =============================================================================
+evaluation:
+  # Path to input JSON file with query and report data
+  input_path: "data/input/claude-opus-4.5_with_tool.json"
+  
+  # Directory for output files
+  output_dir: "output/claude-opus-4.5_with_tool"
+  
+  # Threshold for evidence confidence (0.0-1.0)
+  # Evidence items with confidence below this threshold are discarded
+  confidence_threshold: 0.7
+  
+  # Execution parameters
+  max_workers: 4     # Workers for parallel checklist generation
+  max_iterations: 15 # Not used by GenAI agent
+  
+  # List of item IDs to process (null = all items)
+  item_ids: [0, 1, 2]
+  
+  # Output folder behavior
+  make_new_folder: true
+  clear_folder: true
+  
+  # Logging and output
+  verbose: true
+  enable_logging: true
+  
+  # Conciseness (knowledge density) settings
+  # Enable to calculate score-per-token metrics
+  enable_conciseness: true
+  # Method: "linear" (1/x, most sensitive), "log" (1/log(x), recommended), "power" (1/x^alpha)
+  conciseness_method: "log"
+  # Alpha for power method (0.3-0.7 recommended, lower = less sensitive to length)
+  conciseness_alpha: 0.5
+  
+  # ==========================================================================
+  # Three-Dimensional Scoring Framework
+  # ==========================================================================
+  # D1: Reasoning Score - LLM-as-Judge evaluation
+  # D2: Evidence Score - Web-grounded verification
+  # D3: Credibility Score - Source tier classification
+  
+  # Enable source credibility as independent dimension (D3)
+  enable_source_credibility: true
+  
+  # Final score fusion mode:
+  # - "multiplicative": Final = D1 × D2 × D3 (all dimensions must be good)
+  # - "two_stage": Final = D1 × D2 (for ablation without credibility)
+  # - "weighted": Legacy weighted average (for backward compatibility)
+  # - "independent": Report D1, D2, D3 separately (no final score)
+  score_fusion_mode: "two_stage"
+
+  # Legacy weights (only used in "weighted" mode)
+  reasoning_weight: 0.4   # D1: Reasoning quality weight
+  evidence_weight: 0.4    # D2: Evidence accuracy weight
+  credibility_weight: 0.2 # D3: Source credibility weight
+  
+  # Whether to also apply credibility as Evidence modifier
+  # NOTE: Credibility (D3) is an independent dimension and does NOT modify Evidence (D2).
+  
+  # ==========================================================================
+  # Analysis Report Generation
+  # ==========================================================================
+  # Enable generation of analysis reports for each item
+  enable_analysis: true
+  
+  # Language for analysis reports: "EN" (English) or "ZH" (Chinese)
+  analysis_language: "EN"
+  
+  # Regenerate existing analysis reports (false = skip existing valid reports)
+  regenerate_analysis: false

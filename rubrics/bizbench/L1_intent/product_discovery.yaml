@@ -1,0 +1,13 @@
+# L1 Intent: Product Discovery
+# Finding/exploring products to sell or source
+
+name: "Product Discovery"
+
+primary_deliverable:
+  name: "Concrete Product Information"
+  must_have: "product links (URLs) or identifiers (ASIN, SKU)"
+
+hints:
+  - "Must provide verifiable product links, not just product names"
+  - "Explain why products fit user's needs"
+  - "Note potential risks or validation steps before committing"

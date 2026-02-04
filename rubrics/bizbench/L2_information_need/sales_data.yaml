@@ -1,0 +1,8 @@
+# L2 Information Need: Sales Data
+# Sales volume, BSR rankings, or revenue data
+
+name: "Sales Data"
+
+hints:
+  - "Cite specific sales metric (BSR, units sold, revenue)"
+  - "Indicate source/platform and data recency"

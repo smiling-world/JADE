@@ -1,0 +1,8 @@
+# L2 Information Need: Supplier Evaluation
+# Supplier credentials, certifications, or capabilities
+
+name: "Supplier Evaluation"
+
+hints:
+  - "Evaluate against stated criteria (certifications, capacity)"
+  - "Distinguish self-reported claims vs verified information"

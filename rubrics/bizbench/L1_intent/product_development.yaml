@@ -1,0 +1,14 @@
+# L1 Intent: Product Development
+# Developing, customizing, or modifying products (OEM/ODM)
+
+name: "Product Development"
+
+primary_deliverable:
+  name: "Actionable Development Roadmap"
+  must_have: "specific steps, technical requirements, or factory recommendations"
+
+hints:
+  - "Must provide specific factories or technical specifications"
+  - "Include cost estimates (tooling, MOQ, unit price ranges)"
+  - "Outline development phases with timelines"
+  - "Highlight critical risks or potential blockers in development"

@@ -1,0 +1,14 @@
+# L1 Intent: Supplier Sourcing
+# Finding suppliers, manufacturers, or factories
+
+name: "Supplier Sourcing"
+
+primary_deliverable:
+  name: "Concrete Supplier Information"
+  must_have: "supplier links (URLs) or contact information"
+
+hints:
+  - "Must provide verifiable supplier links or contact info, not just names"
+  - "Distinguish factories from trading companies when possible"
+  - "Include cost structure with clear assumptions"
+  - "Mention supplier verification risks or due diligence steps"

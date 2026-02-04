@@ -1,0 +1,8 @@
+# L3 Constraint: Logistics/Shipping
+# Shipping requirements, delivery timeline, or logistics constraints
+
+name: "Logistics/Shipping"
+
+hints:
+  - "Address stated shipping requirements (destination, timeline)"
+  - "Indicate shipping feasibility for recommendations"

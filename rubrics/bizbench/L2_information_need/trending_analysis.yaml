@@ -1,0 +1,8 @@
+# L2 Information Need: Trending Analysis
+# Analysis of trending products or rising demand
+
+name: "Trending Analysis"
+
+hints:
+  - "Specify trend source (search volume, sales rank, social engagement)"
+  - "Note timeframe and direction (rising/stable/declining)"

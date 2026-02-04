@@ -1,0 +1,8 @@
+# L3 Constraint: Customization/OEM
+# OEM/ODM requirements, custom branding, or customization needs
+
+name: "Customization/OEM"
+
+hints:
+  - "Address stated customization requirements (logo, packaging, design)"
+  - "Indicate whether candidates support required customization level"

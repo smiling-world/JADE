@@ -1,0 +1,14 @@
+# L1 Intent: Market Research
+# Understanding market dynamics, trends, competitors, and opportunities
+
+name: "Market Research"
+
+primary_deliverable:
+  name: "Substantive Market Analysis"
+  must_have: "specific data points, named competitors, or concrete trend analysis"
+
+hints:
+  - "Must provide specific data or named entities, not just frameworks"
+  - "Support claims with data sources"
+  - "Connect findings to actionable implications"
+  - "Acknowledge data limitations or uncertainty in projections"

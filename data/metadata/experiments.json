@@ -1,0 +1,27 @@
+{
+  "with_tool": {
+    "description": "Model with tool/web search capabilities enabled",
+    "date": "2026-01-05",
+    "config": {
+      "use_optimized": true,
+      "stream": true,
+      "timeout": 600.0
+    }
+  },
+  "no_tool": {
+    "description": "Model without tool/web search (baseline)",
+    "date": "2026-01-05",
+    "config": {
+      "use_optimized": true,
+      "stream": true,
+      "timeout": 600.0
+    }
+  },
+  "web_search": {
+    "description": "Model with web search capability (JSON format)",
+    "date": "2026-01-06",
+    "config": {
+      "web_search_enabled": true
+    }
+  }
+}

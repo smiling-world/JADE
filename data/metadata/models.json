@@ -1,0 +1,135 @@
+{
+  "gpt_web_search": {
+    "display_name": "Gpt Web Search",
+    "provider": "OpenAI",
+    "capabilities": [
+      "web_search"
+    ],
+    "source_type": "json"
+  },
+  "shopping_research": {
+    "display_name": "Shopping Research",
+    "provider": "Unknown",
+    "capabilities": [
+      "web_search"
+    ],
+    "source_type": "json"
+  },
+  "gemini3-pro-preview": {
+    "display_name": "Gemini3 Pro Preview",
+    "provider": "Google",
+    "capabilities": [
+      "tool_use",
+      "web_search"
+    ],
+    "source_type": "cache"
+  },
+  "meta-llama_llama-4-maverick": {
+    "display_name": "Meta Llama Llama 4 Maverick",
+    "provider": "Meta",
+    "capabilities": [
+      "tool_use",
+      "web_search"
+    ],
+    "source_type": "cache"
+  },
+  "doubao-seed-1-6-250615": {
+    "display_name": "Doubao Seed 1 6 250615",
+    "provider": "ByteDance",
+    "capabilities": [
+      "tool_use",
+      "web_search"
+    ],
+    "source_type": "cache"
+  },
+  "anthropic_claude-sonnet-4.5": {
+    "display_name": "Anthropic Claude Sonnet 4.5",
+    "provider": "Anthropic",
+    "capabilities": [
+      "tool_use",
+      "web_search"
+    ],
+    "source_type": "cache"
+  },
+  "qwen_qwen3-235b-a22b-2507": {
+    "display_name": "Qwen Qwen3 235B A22B 2507",
+    "provider": "Alibaba",
+    "capabilities": [
+      "tool_use",
+      "web_search"
+    ],
+    "source_type": "cache"
+  },
+  "openai_gpt-4.1": {
+    "display_name": "Openai Gpt 4.1",
+    "provider": "OpenAI",
+    "capabilities": [
+      "tool_use",
+      "web_search"
+    ],
+    "source_type": "cache"
+  },
+  "qwen_qwen3-max": {
+    "display_name": "Qwen Qwen3 Max",
+    "provider": "Alibaba",
+    "capabilities": [
+      "tool_use",
+      "web_search"
+    ],
+    "source_type": "cache"
+  },
+  "anthropic_claude-opus-4.5": {
+    "display_name": "Anthropic Claude Opus 4.5",
+    "provider": "Anthropic",
+    "capabilities": [
+      "tool_use",
+      "web_search"
+    ],
+    "source_type": "cache"
+  },
+  "openai_gpt-5.2": {
+    "display_name": "Openai Gpt 5.2",
+    "provider": "OpenAI",
+    "capabilities": [
+      "tool_use",
+      "web_search"
+    ],
+    "source_type": "cache"
+  },
+  "deepseek_deepseek-v3.2": {
+    "display_name": "Deepseek Deepseek V3.2",
+    "provider": "DeepSeek",
+    "capabilities": [
+      "tool_use",
+      "web_search"
+    ],
+    "source_type": "cache"
+  },
+  "chatgpt_deep_research": {
+    "display_name": "ChatGPT Deep Research",
+    "provider": "OpenAI",
+    "capabilities": [
+      "deep_research",
+      "web_search"
+    ],
+    "source_type": "cache"
+  },
+  "gemini_deep_research": {
+    "display_name": "Gemini Deep Research",
+    "provider": "Google",
+    "capabilities": [
+      "deep_research",
+      "web_search"
+    ],
+    "source_type": "cache"
+  },
+  "gpt_o4-mini-deep-research": {
+    "display_name": "GPT O4 Mini Deep Research",
+    "provider": "OpenAI",
+    "capabilities": [
+      "deep_research",
+      "web_search"
+    ],
+    "source_type": "result_file"
+  }
+}

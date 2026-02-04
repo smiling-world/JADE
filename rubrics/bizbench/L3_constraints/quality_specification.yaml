@@ -1,0 +1,8 @@
+# L3 Constraint: Quality/Technical Specification
+# Technical specifications, material requirements, or quality standards
+
+name: "Quality/Technical Specification"
+
+hints:
+  - "Acknowledge stated technical/quality requirements"
+  - "Indicate whether candidates meet specified requirements"

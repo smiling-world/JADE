@@ -1,0 +1,8 @@
+# L2 Information Need: Platform Data
+# Data from specific platforms (Amazon, TikTok, Alibaba, etc.)
+
+name: "Platform Data"
+
+hints:
+  - "Identify specific platform(s) and data type being referenced"
+  - "Note platform-specific metrics (BSR for Amazon, views for TikTok)"

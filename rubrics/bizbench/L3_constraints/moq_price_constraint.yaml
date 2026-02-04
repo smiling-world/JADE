@@ -1,0 +1,8 @@
+# L3 Constraint: MOQ/Price Constraint
+# MOQ limits, price ranges, or budget constraints
+
+name: "MOQ/Price Constraint"
+
+hints:
+  - "Acknowledge stated MOQ/price/budget constraint"
+  - "Filter candidates based on whether they meet the constraint"

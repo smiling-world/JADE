@@ -1,0 +1,13 @@
+.venv
+.env
+*.cache*
+logs/
+# *.json
+*.log*
+*output*
+*.lock
+test*.py
+*.DS_Store
+*.html
+latex/
+latex*/

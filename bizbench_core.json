@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "query": "请分析 YouTube 上\"#CozyGaming\"标签下最近 30 天的热门视频，识别出除了键盘鼠标之外，出现频率最高的 3 种桌面装饰配件（如异形氛围灯、手腕托），并结合 Google Trends 验证其过去 3 个月的搜索热度是否呈上升趋势。",
+    "L1_primary_intent": "product_discovery",
+    "L2_information_need": ["trending_analysis", "platform_data"],
+    "L3_constraints": [],
+    "reasoning": "The query asks to analyze trending videos under the '#CozyGaming' tag on YouTube to identify frequently appearing desktop decor accessories (excluding keyboards/mice), and to verify their rising search trends with Google Trends. This is primarily about discovering popular products (product_discovery), involves analyzing trends (trending_analysis), and uses platform-specific data (platform_data). No explicit constraints such as certification, MOQ, region, etc. are mentioned.",
+    "optimized_query": "请分析 YouTube 上\"#CozyGaming\"标签下最近 30 天的热门视频，识别出除了键盘鼠标之外，出现频率最高的 3 种桌面装饰配件（如异形氛围灯、手腕托），并结合 Google Trends 验证其过去 3 个月的搜索热度是否呈上升趋势。"
+  },
+  {
+    "id": 2,
+    "query": "请抓取 Amazon US 站 'Yoga Mats' 类目 BSR 前 50 名的产品。分析：\n1.最畅销的厚度是多少（如 6mm vs 10mm）？\n2.有哪些特定材质（TPE vs 橡胶）的产品进入了前 20 名？\n3.是否有 30 美元以上的高客单价产品进入榜单，它们的主打卖点是什么？",
+    "L1_primary_intent": "market_research",
+    "L2_information_need": ["sales_data", "platform_data", "price_comparison", "review_analysis"],
+    "L3_constraints": [],
+    "reasoning": "The query requests analysis of the Amazon US Yoga Mats category, focusing on best sellers (BSR), product thickness, material types, price points, and main selling points. The main goal is to understand market dynamics and product characteristics, which is market research.",
+    "optimized_query": "请抓取 Amazon US 站 'Yoga Mats' 类目 BSR 前 50 名的产品。分析：\n1.最畅销的厚度是多少（如 6mm vs 10mm）？\n2.有哪些特定材质（TPE vs 橡胶）的产品进入了前 20 名？\n3.是否有 30 美元以上的高客单价产品进入榜单，它们的主打卖点是什么？"
+  },
+  {
+    "id": 4,
+    "query": "寻找一款单价低于 $15、起订量（MOQ）小于 500 件、必须支持 DDP 到美国、且具备 FDA 认证的便携式咖啡研磨机。",
+    "L1_primary_intent": "supplier_sourcing",
+    "L2_information_need": ["price_comparison", "supplier_evaluation"],
+    "L3_constraints": ["certification_required", "moq_price_constraint", "logistics_shipping", "region_specific"],
+    "reasoning": "The user is seeking suppliers for a specific product (portable coffee grinder) with explicit requirements for unit price, MOQ, shipping method (DDP to USA), and FDA certification. This is classic supplier sourcing with multiple constraints.",
+    "optimized_query": "寻找一款单价低于 $15、起订量（MOQ）小于 500 件、必须支持 DDP 到美国、且具备 FDA 认证的便携式咖啡研磨机。"
+  },
+  {
+    "id": 7,
+    "query": "Find profitable consumer goods that are currently trending or showing rising demand in Mongolia in 2025. Focus on items with low import barriers, high local consumer interest, and good wholesale margins. Show recent sales volume, estimated retail price in Ulaanbaatar, and reliable Chinese or international suppliers with MOQs under 500 units. Provide market insights, social media interest trends among Mongolian consumers, and shipping/logistics considerations specific to Mongolia.",
+    "L1_primary_intent": "product_discovery",
+    "L2_information_need": ["trending_analysis", "sales_data", "price_comparison", "platform_data", "supplier_evaluation", "competitor_analysis"],
+    "L3_constraints": ["moq_price_constraint", "region_specific", "logistics_shipping"],
+    "reasoning": "The query seeks to discover trending, profitable products (product_discovery), requests data on trends, sales, prices, platforms, competitors, and suppliers (L2), and specifies constraints on MOQ, region (Mongolia), and logistics.",
+    "optimized_query": "Find profitable consumer goods that are currently trending or showing rising demand in Mongolia in 2025. Focus on items with low import barriers, high local consumer interest, and good wholesale margins. Show recent sales volume, estimated retail price in Ulaanbaatar, and reliable Chinese or international suppliers with MOQs under 500 units. Provide market insights, social media interest trends among Mongolian consumers, and shipping/logistics considerations specific to Mongolia."
+  },
+  {
+    "id": 23,
+    "query": "We are currently seeking a reliable partner for the supply of paraffin wax in granule form, packaged in OPP bags of approximately 200 grams, intended for use in candle-making as part of a new creative project. Product Specifications: Material: Paraffin wax (granules); Packaging: OPP bag; Unit weight: Approx. 200 g; End use: Candle production; MOQ required: Multiples of 3,000 pieces. Additional Requirements: To avoid REACH registration, the purchase must be made within the European Union. It is mandatory that the CAS substances involved do not require registration under the REACH regulation. We require the Material Safety Data Sheet (MSDS) for the proposed material.",
+    "L1_primary_intent": "supplier_sourcing",
+    "L2_information_need": ["supplier_evaluation"],
+    "L3_constraints": ["certification_required", "moq_price_constraint", "region_specific", "quality_specification"],
+    "reasoning": "The main goal is to find a reliable supplier for paraffin wax granules with specific packaging and quality requirements. The user needs to evaluate suppliers ensuring they can meet REACH regulations and provide MSDS.",
+    "optimized_query": "We are currently seeking a reliable partner for the supply of paraffin wax in granule form, packaged in OPP bags of approximately 200 grams, intended for use in candle-making as part of a new creative project. Product Specifications: Material: Paraffin wax (granules); Packaging: OPP bag; Unit weight: Approx. 200 g; End use: Candle production; MOQ required: Multiples of 3,000 pieces. Additional Requirements: To avoid REACH registration, the purchase must be made within the European Union. It is mandatory that the CAS substances involved do not require registration under the REACH regulation (Registration, Evaluation, Authorisation and Restriction of Chemicals). We require the Material Safety Data Sheet (MSDS) for the proposed material."
+  },
+  {
+    "id": 29,
+    "query": "A client based in Hawaii, USA, runs a shrimp farm and needs to upgrade their packaging line for frozen shrimp. They need to purchase 2 units of sealing machinery.\n\n● Logistics: The client has regular container departures from China, so these will be shipped via LCL consolidation.\n● Current Pain Point: Local machinery in Hawaii or Amazon US costs around $1,700. The client wants to leverage Chinese manufacturing to find a significant price advantage.\n\nRequirement: Please conduct market research and provide a proposal with two distinct tiers of products:\n1. Industrial Grade (High-End): For heavy-duty, 8+ hours continuous use.\n2. Commercial Grade (Entry-Level): For small business/lab use, prioritising cost-efficiency.\n\nPlease write a Sourcing Analysis Report covering: Technical Specification Check, Product Comparison, Printing System Recommendation, and Price Estimation (FOB China prices).",
+    "L1_primary_intent": "market_research",
+    "L2_information_need": ["price_comparison", "platform_data", "competitor_analysis", "review_analysis"],
+    "L3_constraints": ["logistics_shipping", "moq_price_constraint", "quality_specification", "region_specific"],
+    "reasoning": "The main goal is to conduct market research for suitable sealing machinery for frozen shrimp packaging, comparing product tiers and providing a sourcing analysis with price estimations.",
+    "optimized_query": "A client based in Hawaii, USA, runs a shrimp farm and needs to upgrade their packaging line for frozen shrimp. They need to purchase 2 units of sealing machinery.\n\n● Logistics: The client has regular container departures from China, so these will be shipped via LCL (Less Than Container Load) consolidation.\n● Current Pain Point: Local machinery in Hawaii or Amazon US costs around $1,700. The client wants to leverage Chinese manufacturing to find a significant price advantage (Trade Arbitrage).\n\nClient Context & Constraints:\nProduct: Frozen shrimp.\nPackaging: Poly bags, 4-6 mil thickness.\nBag Size: Max size is 14\" (Height) x 8.5\" (Width). Weight is 2 lbs or 24 oz.\nCurrent Situation: They currently use a machine with a 1/2\" sealing width.\n\nRequirement: Please conduct market research and provide a proposal with two distinct tiers of products:\n1. Industrial Grade (High-End): For heavy-duty, 8+ hours continuous use.\n2. Commercial Grade (Entry-Level): For small business/lab use, prioritising cost-efficiency.\nPlease write a Sourcing Analysis Report that covers:\nTechnical Specification Check: What specific type of band sealer is required, given the product is \"frozen shrimp\" (liquid/loose) and the bag is 14\" tall?\nProduct Comparison: Compare a specific Industrial Model (e.g., QLF series) vs. a Commercial Model (e.g., FR series). Explain the differences in structure, max loading, and working speed/hours.\nPrinting System Recommendation: Compare Ink Roller vs. Embossing for this specific frozen food application. Which one is better and why?\nPrice Estimation: Provide estimated FOB China prices for both options to help the client decide."
+  },
+  {
+    "id": 30,
+    "query": "I would like to sell customizable cashmere coats for women. The price range would be in between $999 CAD and $1,199 CAD. Customers can choose from 10 colours; we customize based on the customer's measurements. We plan to sell to U.S., Canadian, and UK customers. Our primary platform would be Etsy. These coats are made using a premium cashmere-wool blend, with cashmere taking 50% or more of the fabric content. The coats are handmade. We can also slightly adjust the style (add pockets, belts, etc.). We want to start small. For the first year, a $10,000 sale would be desirable. Could you analyze the market to see if there is an opening?",
+    "L1_primary_intent": "market_research",
+    "L2_information_need": ["trending_analysis", "sales_data", "platform_data", "competitor_analysis", "price_comparison", "review_analysis"],
+    "L3_constraints": ["moq_price_constraint", "customization_oem", "region_specific", "quality_specification"],
+    "reasoning": "The query asks for an analysis of the market opportunity for customizable, premium cashmere coats on Etsy, targeting US, Canadian, and UK customers. This is market research with comprehensive L2 needs and multiple L3 constraints.",
+    "optimized_query": "I would like to sell customizable cashmere coats for women. The price range would be in between $999 CAD and $1,199 CAD. Customers can choose from 10 colours; we customize based on the customer's measurements. We plan to sell to U.S., Canadian, and UK customers. Our primary platform would be Etsy. These coats are made using a premium cashmere-wool blend, with cashmere taking 50% or more of the fabric content. The coats are handmade. We can also slightly adjust the style (add pockets, belts, etc.). We want to start small. For the first year, a $10,000 sale would be desirable. Could you analyze the market to see if there is an opening?"
+  },
+  {
+    "id": 33,
+    "query": "I need to design a girls' halter top that would be perfect for wearing to festivals. It will be crafted of entirely imitation pearls and will fit multiple sizes so that I don't have to worry about stocking and selling multiple sizes. Use lightweight faux pearls, ideally 10 mm.\nSpecifications:\n_ Material: imitation pearls.\n_ Color: White to off-white with pearlescent quality.\nCustomization:\n_ Adjustable back to fit multiple sizes.\nDelivery Terms:\n_ Please quote your lowest MOQ for both regular and sample orders.\n_ Preferred trade terms: FOB or CIF.\n_ Packaging requirements: in individual bags, no branding.\nI'm interested in both production-scale quantities and samples.",
+    "L1_primary_intent": "product_development",
+    "L2_information_need": ["price_comparison"],
+    "L3_constraints": ["moq_price_constraint", "customization_oem", "quality_specification", "logistics_shipping"],
+    "reasoning": "The query is centered around designing a new product (girls' halter top made of imitation pearls with specific features), which falls under product_development with multiple L3 constraints.",
+    "optimized_query": "I need to design a girls' halter top that would be perfect for wearing to festivals. It will be crafted of entirely imitation pearls and will fit multiple sizes so that I don't have to worry about stocking and selling multiple sizes. Use lightweight faux pearls, ideally 10 mm.\nSpecifications:\n_ Material: imitation pearls.\n_ Color: White to off-white with pearlescent quality.\nCustomization:\n_ Adjustable back to fit multiple sizes.\nDelivery Terms:\n_ Please quote your lowest MOQ for both regular and sample orders.\n_ Preferred trade terms: FOB or CIF.\n_ Packaging requirements: in individual bags, no branding.\nI'm interested in both production-scale quantities and R."
+  },
+  {
+    "id": 36,
+    "query": "Search for suppliers of organic rosehip oil. Collect data on their certifications, sustainability reports, compliance with EU/FDA standards, production capacity, cost, reputation, and logistics. Score each supplier using a weighted evaluation matrix (as provided). Present the final comparison in a clear table format.",
+    "L1_primary_intent": "supplier_sourcing",
+    "L2_information_need": ["supplier_evaluation", "price_comparison"],
+    "L3_constraints": ["certification_required", "logistics_shipping", "quality_specification", "region_specific"],
+    "reasoning": "The main goal is to find and compare suppliers of organic rosehip oil, focusing on their certifications, sustainability, compliance (supplier_evaluation), and cost (price_comparison).",
+    "optimized_query": "Search for suppliers of organic rosehip oil. Collect data on their certifications, sustainability reports, compliance with EU/FDA standards, production capacity, cost, reputation, and logistics. Score each supplier using a weighted evaluation matrix (as provided). Present the final comparison in a clear table format."
+  },
+  {
+    "id": 41,
+    "query": "请基于阿里巴巴产品链接中的SUN racing PCX160台湾自动摩托车产品信息，制作一份专业的B2B产品详情页面。\n\n具体要求：\n1. 产品优势提炼：从链接页面提取核心技术参数，突出产品独特卖点，量化产品优势\n2. B2B页面结构：产品标题、图片、技术规格表、产品优势、质量认证、包装运输\n3. 全球代理商招募板块：招募标题、代理商要求、合作优势、申请流程、联系方式\n4. 商机转化要素：明确的CTA按钮、紧迫感元素、信任建立\n\n请确保内容专业、数据准确、表述简洁有力，符合B2B采购决策习惯。",
+    "L1_primary_intent": "product_development",
+    "L2_information_need": ["platform_data", "sales_data", "review_analysis", "price_comparison", "supplier_evaluation"],
+    "L3_constraints": ["certification_required", "moq_price_constraint", "logistics_shipping", "region_specific", "quality_specification"],
+    "reasoning": "The main goal is to create a professional B2B product detail page, which is a product development activity with comprehensive L2 needs and full L3 constraint coverage.",
+    "optimized_query": "请基于阿里巴巴产品链接 https://www.alibaba.com/product-detail/SUN-racing-PCX160-Taiwan-Automatic-Motorcycle_10000028276578.html?spm=a2700.shop_plfe.41413.14.3cf95f55S4f2Rq 中的SUN racing PCX160台湾自动摩托车产品信息，制作一份专业的B2B产品详情页面。\n\n具体要求：\n1. 产品优势提炼：\n- 从链接页面提取核心技术参数（引擎规格、性能数据、燃油效率等）\n- 突出产品独特卖点（台湾制造品质、自动变速系统、运动化设计等）\n- 量化产品优势（具体数值、认证标准、性能对比）\n\n2. B2B页面结构：\n- 产品标题：包含品牌、型号、核心特征\n- 产品图片：高清产品图、细节图、使用场景图\n- 技术规格表：详细参数对比表格\n- 产品优势：3-5个核心卖点，每个配具体说明\n- 质量认证：相关行业认证和标准\n- 包装运输：包装规格、起订量、交货期\n\n3. 全球代理商招募板块：\n- 招募标题：\"全球优质代理商招募计划\"\n- 代理商要求：具体的资质要求、销售能力、地区覆盖范围\n- 合作优势：代理商可获得的支持政策、价格优势、技术支持\n- 申请流程：明确的3-5步申请步骤\n- 联系方式：专门的代理商咨询联系信息\n\n4. 商机转化要素：\n- 明确的CTA按钮（\"立即询价\"、\"申请代理\"、\"索取样品\"）\n- 紧迫感元素（限时优惠、首批代理商特殊政策）\n- 信任建立（公司资质、生产实力、成功案例）\n\n请确保内容专业、数据准确、表述简洁有力，符合B2B采购决策习惯。"
+  },
+  {
+    "id": 50,
+    "query": "Women's Winter Clothes\n\n1. Age:\n18–40 years old\n2. Gender:\nWomen\n3. Location:\nUS, Canada, UK, Europe, Australia (cold-weather regions in winter)\n4. Income Level:\nMiddle-income ($1,500–$4,000/month)\n5. Lifestyle / Interests:\n• Fashion-conscious\n• Likes online shopping\n• Follows trends on Instagram, TikTok, Pinterest\n• Enjoys seasonal clothing & cozy winter outfits\n6. Needs / Problems:\n• Wants warm, stylish clothes for winter\n• Hard to find affordable but trendy winter outfits online\n• Wants clothes that are comfortable, versatile, and Instagram-worthy\n7. Problem:\nWomen struggle to find winter clothes that are warm, stylish, and affordable in their area.\n8. Solution:\nOffer affordable, fashionable winter clothing delivered online, with easy shopping and trendy designs\n9. Product:\n• Winter jackets, coats, sweaters, hoodies, scarves, gloves\n• Price range: $25–$70",
+    "L1_primary_intent": "product_discovery",
+    "L2_information_need": ["trending_analysis", "price_comparison"],
+    "L3_constraints": ["moq_price_constraint", "region_specific"],
+    "reasoning": "The query is focused on exploring what types of women's winter clothes would appeal to a specific demographic and market, indicating a product discovery intent. The emphasis on fashion trends (Instagram, TikTok, Pinterest) suggests a need for trending analysis. The specified price range ($25–$70) and the mention of affordability point to price comparison. Constraints include the explicit price range (moq_price_constraint) and the target regions (US, Canada, UK, Europe, Australia).",
+    "optimized_query": "Women's Winter Clothes\n\n1. Age:\n18–40 years old.\n2. Gender:\nWomen.\n3. Location:\nUS, Canada, UK, Europe, Australia (cold-weather regions in winter).\n4. Income Level:\nMiddle-income ($1,500–$4,000/month).\n5. Lifestyle/Interests:\n• Fashion-conscious.\n• Likes online shopping.\n• Follows trends on Instagram, TikTok, Pinterest.\n• Enjoys seasonal clothing & cozy winter outfits.\n6. Needs/Problems:\n• Wants warm, stylish clothes for winter.\n• Hard to find affordable but trendy winter outfits online.\n• Wants clothes that are comfortable, versatile, and Instagram-worthy.\n7. Problem:\nWomen struggle to find winter clothes that are warm, stylish, and affordable in their area.\n8. Solution:\nOffer affordable, fashionable winter clothing delivered online, with easy shopping and trendy designs.\n9. Product:\n• Winter jackets, coats, sweaters, hoodies, scarves, gloves.\n• Price range: $25–$70."
+  },
+  {
+    "id": 43,
+    "query": "Alright, what I want to create is the Cool Pets Australia Christmas Pet box. I wanna create an epic product here that can be created, produced, and packaged, and sent to Australia immediately.\n\nWhat I wanna do is work with a company that can drop ship or just send a heap to Australia. Not necessarily Christmas-themed, but we can try and market them for the Christmas rush. What we wanna do is just create an absolute viral frenzy with it. I wanna go at the higher price point, so I wanna include cheap things that I can throw in this box that are gonna be of interest to pet owners. And I wanna be able to do it so we can promote Cool Pets Australia as well.\n\nLike a box, it'll be a mystery box almost. We could price it at $350. It's got some good things in there that the average everyday pet owner needs for their cat or their dog, and we can tailor it. Small dog owner, large dog owner, cat owner.",
+    "L1_primary_intent": "product_development",
+    "L2_information_need": ["price_comparison", "platform_data", "trending_analysis"],
+    "L3_constraints": ["moq_price_constraint", "logistics_shipping", "region_specific", "customization_oem"],
+    "reasoning": "The user is focused on creating and developing a new product (pet box), specifying product features, pricing, and promotional strategies, which aligns with product_development.",
+    "optimized_query": "Alright, what I want to create is the Cool Pets Australia Christmas Pet box. I wanna create an epic product here that can be created, produced, and packaged, and sent to Australia immediately.\n\nWhat I wanna do is work with a company that can drop ship or just send a heap to Australia. Not necessarily Christmas-themed, but we can try and market them for the Christmas rush. What we wanna do is just create an absolute viral frenzy with it. I wanna go at the higher price point, so I wanna include cheap things that I can throw in this box that are gonna be of interest to pet owners. And I wanna be able to do it so we can promote Cool Pets Australia as well.\n\nLike a box, it'll be a mystery box almost. We could price it at $350. It's got some good things in there that the average everyday pet owner needs for their cat or their dog, and we can tailor it. Small dog owner, large dog owner, cat owner."
+  },
+  {
+    "id": 44,
+    "query": "Source ultra-low cost, high-perceived value, viral products for limited-edition CoolPets Hype Drop Boxes. Target COGS $0.50–$3, premium max $5–$7. Items must look $15–$60 RRP, be highly presentable, unboxing-friendly, visually striking, interactive, and strong for TikTok/Instagram. Prefer cat-reactive items. Products must be lightweight, cheap to ship, easy to bulk-order via AliExpress/Alibaba/Temu, and made from safe, non-toxic materials (silicone, TPR, PP, cotton, polyester, BPA-free). Must align with CoolPets themes: cooling, summer survival, enrichment, treats, travel, grooming, toys, and seasonal drops.",
+    "L1_primary_intent": "product_discovery",
+    "L2_information_need": ["trending_analysis", "platform_data", "price_comparison"],
+    "L3_constraints": ["moq_price_constraint", "logistics_shipping", "quality_specification"],
+    "reasoning": "The main goal is to discover ultra-low cost, viral, high-perceived value products suitable for themed drop boxes with specific cost and quality requirements.",
+    "optimized_query": "Source ultra-low cost, high-perceived value, viral products for limited-edition CoolPets Hype Drop Boxes. Target COGS $0.50–$3, premium max $5–$7. Items must look $15–$60 RRP, be highly presentable, unboxing-friendly, visually striking, interactive, and strong for TikTok/Instagram. Prefer cat-reactive items. Products must be lightweight, cheap to ship, easy to bulk-order via AliExpress/Alibaba/Temu, and made from safe, non-toxic materials (silicone, TPR, PP, cotton, polyester, BPA-free). Must align with CoolPets themes: cooling, summer survival, enrichment, treats, travel, grooming, toys, and seasonal drops."
+  },
+  {
+    "id": 46,
+    "query": "单向透明的滑雪镜贴花。该产品可在滑雪时佩戴，既能让使用者从雪镜内侧清晰视物，又能在雪镜外表面呈现清晰的图案。\n这是一款可重复使用的产品——贴花可以粘贴在雪镜外侧，并可根据需要随时自由撕下和重复粘贴。\n\n产品需满足可移除、可重复使用的特性，外表面图案清晰，并能耐受低温且不易撕裂或破损。理想状态下，产品应保证内侧100%无遮挡视野，且成本需足够合理，实现各类图案的批量印刷，从而支持客户的个性化定制需求。\n\n我们目前的原型采用半穿孔乙烯基材料，但存在内侧视野清晰度不足的问题。",
+    "L1_primary_intent": "product_development",
+    "L2_information_need": [],
+    "L3_constraints": ["customization_oem", "quality_specification", "moq_price_constraint"],
+    "reasoning": "The query focuses on improving an existing product (a reusable ski goggle decal) due to issues with the current prototype. No explicit L2 information needs are requested.",
+    "optimized_query": "单向透明的滑雪镜贴花。该产品可在滑雪时佩戴，既能让使用者从雪镜内侧清晰视物，又能在雪镜外表面呈现清晰的图案。\n这是一款可重复使用的产品——贴花可以粘贴在雪镜外侧，并可根据需要随时自由撕下和重复粘贴。\n\n产品需满足可移除、可重复使用的特性，外表面图案清晰，并能耐受低温且不易撕裂或破损。理想状态下，产品应保证内侧100%无遮挡视野，且成本需足够合理，实现各类图案的批量印刷，从而支持客户的个性化定制需求。\n\n我们目前的原型采用半穿孔乙烯基材料，但存在内侧视野清晰度不足的问题。"
+  },
+  {
+    "id": 54,
+    "query": "Source handmade split-toe ballet shoes / Mary Janes / flats / low-heeled shoes (not sneakers).\nGenuine or vegan leather, boutique quality, minimalist style.\nMust support dropshipping or single-order, white-label, MOQ <10.\nShow tabi or split-toe construction clearly in photos.\nShip to EU/US within 1–3 weeks.",
+    "L1_primary_intent": "supplier_sourcing",
+    "L2_information_need": ["platform_data", "supplier_evaluation"],
+    "L3_constraints": ["moq_price_constraint", "customization_oem", "logistics_shipping", "quality_specification", "region_specific"],
+    "reasoning": "The query's main goal is to find suppliers who can provide specific types of shoes with requirements for dropshipping, white-label, MOQ <10, and shipping to EU/US.",
+    "optimized_query": "Source handmade split-toe ballet shoes / Mary Janes / flats / low-heeled shoes (not sneakers).\nGenuine or vegan leather, boutique quality, minimalist style.\nMust support dropshipping or single-order, white-label, MOQ <10.\nShow tabi or split-toe construction clearly in photos.\nShip to EU/US within 1–3 weeks."
+  },
+  {
+    "id": 66,
+    "query": "Hello,\nI am developing a new brand for Amazon Europe called DeskZen™.\nI need a Premium Magnetic Cable Management Kit with custom packaging.\nPlease send me:\n1. Exact price for 100/150/300 units\n2. Printing or engraving options for the logo \"DeskZen™\"\n3. Real pictures/videos of your product\n4. Lead time for production + shipping\n5. Total weight per unit + carton size\n6. Cost for DDP shipping to Amazon Europe warehouse\n7. Sample price and lead time\n\nI want high-quality silicone and real 3M VHB adhesive, not generic.\nIf quality is good, I will reorder 500+ units monthly.",
+    "L1_primary_intent": "supplier_sourcing",
+    "L2_information_need": ["price_comparison", "platform_data", "supplier_evaluation"],
+    "L3_constraints": ["moq_price_constraint", "customization_oem", "logistics_shipping", "quality_specification", "region_specific"],
+    "reasoning": "The main goal is to find a supplier for a specific product with custom branding for Amazon Europe, with detailed OEM and quality requirements.",
+    "optimized_query": "Hello,\nI am developing a new brand for Amazon Europe called DeskZen™.\nI need a Premium Magnetic Cable Management Kit with custom packaging.\nPlease send me:\n1. Exact price for 100/150/300 units\n2. Printing or engraving options for the logo \"DeskZen™\"\n3. Real pictures/videos of your product\n4. Lead time for production + shipping\n5. Total weight per unit + carton size\n6. Cost for DDP shipping to Amazon Europe warehouse\n7. Sample price and lead time\n\nI want high-quality silicone and real 3M VHB adhesive, not generic.\nIf quality is good, I will reorder 500+ units monthly."
+  },
+  {
+    "id": 72,
+    "query": "You are my expert dropshipping mentor and market analyst. Act as a top 1% seller and product researcher. Search every market deeply: Amazon, Walmart, eBay, Etsy, AliExpress, Alibaba, Shein, Wayfair, Target, Home Depot, Best Buy, Google Shopping, TikTok Shop, Instagram, Pinterest, Facebook Marketplace, YouTube Shorts, Reddit, and Shopify stores. Focus on November–December Christmas gifts, decorations, and LED/light-up products. Deliver the top 10 winning products ranked by profit potential (demand × margin × scalability). Prioritize items under $80, lightweight, impulse-buy friendly, and safe for dropshipping. For each product, show: name, category, top marketplaces, search volume, trend score, TikTok hashtag views, Amazon BSR + estimated sales, avg price, est. cost + shipping, margin, est. monthly sales, difficulty score, top keywords, supplier links, ad angles, notes/red flags, and sources. Include a 14-day test plan for top 3 products with ad spend split.",
+    "L1_primary_intent": "product_discovery",
+    "L2_information_need": ["trending_analysis", "sales_data", "review_analysis", "competitor_analysis", "price_comparison", "platform_data", "supplier_evaluation"],
+    "L3_constraints": ["moq_price_constraint", "logistics_shipping", "region_specific", "quality_specification"],
+    "reasoning": "The user's main goal is to deeply research and identify top winning products to sell for a specific season (Christmas), with comprehensive L2 needs covering all categories.",
+    "optimized_query": "You are my expert dropshipping mentor and market analyst. Act as a top 1% seller and product researcher. Search every market deeply: Amazon, Walmart, eBay, Etsy, AliExpress, Alibaba, Shein, Wayfair, Target, Home Depot, Best Buy, Google Shopping, TikTok Shop, Instagram, Pinterest, Facebook Marketplace, YouTube Shorts, Reddit, and Shopify stores. Use Google Trends, Keyword Planner, Ahrefs/SEMrush, Jungle Scout, Helium 10, and public bestseller data. Focus on November–December Christmas gifts, decorations, and LED/light-up products. Go deep, not surface. Deliver the top 10 winning products ranked by profit potential (demand × margin × scalability). Prioritize items under $80, lightweight, impulse-buy friendly, and safe for dropshipping. For each product, show: name, category, top marketplaces, search volume (Google 30d/12mo), trend score (90d), TikTok hashtag views (top 3), Amazon BSR + estimated sales, Facebook/Instagram ad count, avg price, est. cost + shipping, margin, est. monthly sales, difficulty score, top keywords, supplier links, ad angles, notes/red flags, and sources."
+  },
+  {
+    "id": 80,
+    "query": "국가: 중국\n업체 연혁: 10년 이상\n업체 직원: 100명 이상\n인증: CE, FCC, MSDS 등 다양한 인증 경험 보유\n등록 업체: Global Sources에 등록된 업체\n\n위 조건으로 생산하는 업체를 찾으려고 해. 가장 우수한 업체 10개의 리스트를 추천해줘. 그리고 하기 항목을 포함해서 정리해줘.\n\n- 제품: 맥세이프 보조 배터리\n- 업체명, 국가, 업체 사이트, 업체 대표 5가지 제품, 업체 주소, 업체 담당자, 업체 담당자 연락처(Email, WeChat), 업체 연혁, 업체 직원 수, 인증 보유",
+    "L1_primary_intent": "supplier_sourcing",
+    "L2_information_need": ["supplier_evaluation", "platform_data"],
+    "L3_constraints": ["certification_required", "region_specific", "quality_specification"],
+    "reasoning": "Korean language query seeking top suppliers for MagSafe power banks with specific certification, company size, and platform registration requirements.",
+    "optimized_query": "국가: 중국\n업체 연혁: 10년 이상\n업체 직원: 100명 이상\n인증: CE, FCC, MSDS 등 다양한 인증 경험 보유\n등록 업체: Global Sources에 등록된 업체\n\n위 조건으로 생산하는 업체를 찾으려고 해. 가장 우수한 업체 10개의 리스트를 추천해줘. 그리고 하기 항목을 포함해서 정리해줘.\n\n- 제품: 맥세이프 보조 배터리\n- 업체명, 국가, 업체 사이트, 업체 대표 5가지 제품, 업체 주소, 업체 담당자, 업체 담당자 연락처(Email, WeChat), 업체 연혁, 업체 직원 수, 인증 보유"
+  },
+  {
+    "id": 84,
+    "query": "Contexte : Je suis acheteur via Alibaba et je reconditionne/revends à des entreprises et organismes gouvernementaux. Nos exigences sont très élevées en matière de conformité, traçabilité, qualité et sécurité. Réalise une due-diligence complète et professionnelle sur ce fournisseur, orientée B2B/marchés publics.\n\nObjectif : Fournir un rapport d'audit commercial & conformité actionnable.\n\nLivrables demandés:\n1. Résumé exécutif avec verdict: ACHETER / DEMANDER ÉCHANTILLON & TESTS / AUDIT USINE / ÉVITER\n2. Fiche d'identité du fournisseur\n3. Vérification des certificats (ISO, CE, RoHS, FCC, FDA)\n4. Capacité & production\n5. Contrôle qualité\n6. Traçabilité / sourcing des matières\n7. Tests produits & conformité réglementaire\n8. Références & historique clients\n9. Conditions commerciales & logistiques (MOQ, prix FOB/CIF, délais)\n10. Évaluation des risques & drapeaux rouges\n11. Score final (0–100) et matrice des risques\n12. Plan d'action recommandé en 3 étapes",
+    "L1_primary_intent": "supplier_sourcing",
+    "L2_information_need": ["supplier_evaluation", "platform_data", "price_comparison"],
+    "L3_constraints": ["certification_required", "moq_price_constraint", "logistics_shipping", "region_specific", "quality_specification"],
+    "reasoning": "French language query for comprehensive supplier due diligence for B2B/government procurement with strict compliance requirements.",
+    "optimized_query": "Contexte : Je suis acheteur via Alibaba et je reconditionne/revends à des entreprises et organismes gouvernementaux. Nos exigences sont très élevées en matière de conformité, traçabilité, qualité et sécurité. Je fournis ci-dessous le lien Alibaba (ou autres docs joints). Réalise une due-diligence complète et professionnelle sur ce fournisseur, orientée B2B/marchés publics. Objectif : Fournir un rapport d'audit commercial & conformité actionnable, prêt à être partagé à un service qualité ou une cellule achats gouvernementale. Livrables demandés (format report + résumé exéc. en 5–7 lignes) : 1. Résumé exécutif (5–7 lignes) avec verdict clair : ACHETER / DEMANDER ÉCHANTILLON & TESTS / AUDIT USINE / ÉVITER. 2. Fiche d'identité du fournisseur : nom légal, adresse usine(s), année de création, numéro de licence / business license, contact export, structure de propriété. 3. Vérification des certificats : lister et joindre copies (ISO, CE, RoHS, FCC, FDA, etc. pertinents), indiquer émetteur et validité, vérifier si tiers indépendant (SGS/TÜV/Intertek) — alerter si certificats auto-déclarés. 4. Capacité & production : lignes/procédés, capacité mensuelle, capacité de montée en charge, principaux équipements, lead times. 5. Contrôle qualité : process QC, fréquences tests, existence de labs internes/externes, derniers rapports d'inspection (dates & résultats). 6. Traçabilité / sourcing des matières : origine des composants critiques, preuves des fournisseurs en amont, risques de composants restreints. 7. Tests produits & conformité réglementaire : tests recommandés selon le produit + laboratoires suggérés (avec coût approximatif si possible). 8. Packaging & sécurité du transport : conformité de l'étiquetage, emballage pour le transit (matières dangereuses, batteries…). 9. Références & historique clients : au moins 2 références d'entreprises / publiques si disponibles (nom, contact, nature du contrat). 10. Conditions commerciales & logistiques : MOQ, prix FOB et CIF (estimation vers Lubumbashi si possible), délais, modalités de paiement, politiques de garantie/retour. 11. Évaluation des risques & drapeaux rouges : incohérences d'identité, certifications suspectes, sous-traitance non déclarée, dépendance à un seul site. 12. Score final (0–100) et matrice des risques (fraude, qualité, conformité, capacité, logistique). 13. Plan d'action recommandé en 3 étapes concrètes (ex : 1) commander échantillon + tests 2) audit vidéo/in-person 3) négocier contrat-cadre + conditions de paiement sécurisées). 14. Annexes : photos d'usine, scans de certificats, devis, rapports QC, copies de BL/CO si disponibles. Format exigé : - Rapport structuré + table des matières. - Tableau récapitulatif des certificats et leur véracité. - Score final et 3 options de décision (achat, audit, rejet). - Inclure une section \"questions prioritaires à poser au fournisseur\" (top 10). Pièces jointes que je fournirai : lien Alibaba, photos, copies de certificats, devis. Rappelle-moi dans le rapport quelles pièces manquent. Ton : professionnel, direct, orienté B2B/gouvernement. Signale clairement tout point nécessitant preuve documentaire. Merci. https://kingbolen.m.en.alibaba.com/fr_FR/?spm=a2700.details.0.0.40996690wmkXUF&wx_navbar_transparent=true&wx_screen_direc=portrait&productId=1600517062763&from=detail_company_card"
+  },
+  {
+    "id": 100,
+    "query": "Lançant un produit sur Amazon FBA avec un budget de 500 €.\nJe cherche un échantillon (1 pack) d'organiseur de câbles magnétique (pack de 10 pièces), en noir et gris, avec colle 3M industrielle.\n\nCritères prioritaires:\n- Fournisseurs vérifiés sur Alibaba (Gold Supplier ou Trade Assurance)\n- Prix échantillon: <15 € total (incluant l'envoi DHL/UPS vers la Belgique)\n- MOQ négociable: 100-150 unités pour commande principale, à 1,40-1,50 €/unité\n- Délai échantillon: <10 jours; commande: <20 jours\n- Options éco (silicone recyclable) et personnalisation (logo \"CableZen\" + emballage kraft simple)\n- Livraison directe possible vers le centre FBA Amazon en France (Pan-EU)\n\nMontre-moi 5 fournisseurs top avec: liens Alibaba, prix exacts, MOQ, avis, et un message type pour négocier.\nPriorise les fournisseurs avec expérience Amazon EU et certification RoHS/CE.",
+    "L1_primary_intent": "supplier_sourcing",
+    "L2_information_need": ["platform_data", "price_comparison", "supplier_evaluation", "review_analysis"],
+    "L3_constraints": ["certification_required", "moq_price_constraint", "logistics_shipping", "customization_oem", "region_specific", "quality_specification"],
+    "reasoning": "French language query for Amazon FBA product launch, seeking suppliers with specific certifications, pricing, and FBA fulfillment capabilities.",
+    "optimized_query": "Lançant un produit sur Amazon FBA avec un budget de 500 €.\nJe cherche un échantillon (1 pack) d'organiseur de câbles magnétique (pack de 10 pièces : 5 grands pour câbles USB, 5 petits pour écouteurs), en noir et gris, avec colle 3M industrielle (adhésif réutilisable sans trace).\n\nCritères prioritaires :\n- Fournisseurs vérifiés sur Alibaba (Gold Supplier ou Trade Assurance).\n- Prix échantillon : <15 € total (incluant l'envoi DHL/UPS vers la Belgique).\n- MOQ négociable : 100-150 unités pour commande principale, à 1,40-1,50 €/unité.\n- Délai échantillon : <10 jours ; commande : <20 jours.\n- Options éco (silicone recyclable) et personnalisation (logo \"CableZen\" + emballage kraft simple).\n- Livraison directe possible vers le centre FBA Amazon en France (Pan-EU).\n\nMontre-moi 5 fournisseurs top avec : liens Alibaba, prix exacts, MOQ, avis, et un message type pour négocier.\nPriorise les fournisseurs avec expérience Amazon EU et certification RoHS/CE."
+  },
+  {
+    "id": 105,
+    "query": "请对阿里巴巴店铺进行深度商业分析。具体分析要求如下：\n\n**店铺定位分析：** 明确该店铺在行业中的市场定位，分析其主要产品类别及价格区间，识别其与同行业竞争对手的差异化优势\n\n**商业模式剖析：** 详细描述其B2B运营模式和盈利结构，分析其供应链管理模式，评估其订单处理流程和客户服务体系\n\n**目标买家画像构建：** 分析其主要客户群体的地域分布，识别买家的业务规模特征，归纳买家的采购偏好和决策因素\n\n**核心竞争优势识别：** 产品质量认证和品质保障措施，价格竞争力和性价比优势，服务响应速度和专业度，技术创新或设计能力\n\n**潜在合作价值点：** 量化其年交易规模和增长趋势，分析其供应稳定性和产能情况，评估其品牌影响力和市场口碑",
+    "L1_primary_intent": "market_research",
+    "L2_information_need": ["competitor_analysis", "price_comparison", "sales_data", "platform_data", "supplier_evaluation", "review_analysis"],
+    "L3_constraints": [],
+    "reasoning": "Chinese query requesting comprehensive business analysis of an Alibaba store with full L2 coverage and no explicit L3 constraints.",
+    "optimized_query": "请对阿里巴巴店铺 https://gstart.en.alibaba.com/ 进行深度商业分析。具体分析要求如下：\n\n**店铺定位分析：**\n- 明确该店铺在行业中的市场定位（高端/中端/入门级）\n- 分析其主要产品类别及价格区间\n- 识别其与同行业竞争对手的差异化优势\n\n**商业模式剖析：**\n- 详细描述其B2B运营模式和盈利结构\n- 分析其供应链管理模式（自产/代工/贸易商等）\n- 评估其订单处理流程和客户服务体系\n\n**目标买家画像构建：**\n- 分析其主要客户群体的地域分布\n- 识别买家的业务规模特征（小型零售商/批发商/大型采购商）\n- 归纳买家的采购偏好和决策因素\n\n**核心竞争优势识别：**\n- 产品质量认证和品质保障措施\n- 价格竞争力和性价比优势\n- 服务响应速度和专业度\n- 技术创新或设计能力\n\n**潜在合作价值点：**\n- 量化其年交易规模和增长趋势\n- 分析其供应稳定性和产能情况\n- 评估其品牌影响力和市场口碑\n- 识别可复制的成功运营经验\n\n请基于以上维度输出一份结构化的分析报告，重点突出该店铺值得其他企业学习和借鉴的成功要素。"
+  },
+  {
+    "id": 107,
+    "query": "请为冰箱贴类别生成商业可行性报告，包括：A) 全球销售趋势，B) 主要价格区间分布，C) 关键用户痛点，D) 供应链成熟度（阿里巴巴上的制造商数量），以及E) 轻度定制可行性的建议。",
+    "L1_primary_intent": "market_research",
+    "L2_information_need": ["trending_analysis", "price_comparison", "review_analysis", "platform_data", "supplier_evaluation"],
+    "L3_constraints": ["customization_oem"],
+    "reasoning": "Chinese query requesting a commercial feasibility report for fridge magnets with multiple L2 needs and a customization constraint.",
+    "optimized_query": "请为冰箱贴类别生成商业可行性报告，包括：A) 全球销售趋势，B) 主要价格区间分布，C) 关键用户痛点，D) 供应链成熟度（阿里巴巴上的制造商数量），以及E) 轻度定制可行性的建议。"
+  },
+  {
+    "id": 112,
+    "query": "Please conduct a comprehensive Amazon USA market analysis for Minoxidil topical solution (liquid form).\nFocus specifically on identifying which pack sizes sell the most — single bottle, 2-pack, 3-pack, 6-pack, etc.\n\nThe goal is to understand current consumer buying preferences and dominant sales formats among top-selling listings.\n\nPlease include:\n- Ranking of best-selling Minoxidil liquid listings by pack size\n- Average price per pack and per bottle\n- Customer feedback trends (why customers prefer multi-packs vs single)\n- Any observable patterns in subscription purchases or Amazon \"frequently bought together\" items\n\nThe output should help determine optimal packaging and quantity mix for launching 5,000 units in the U.S. Amazon market.",
+    "L1_primary_intent": "market_research",
+    "L2_information_need": ["sales_data", "platform_data", "review_analysis", "trending_analysis", "price_comparison"],
+    "L3_constraints": ["region_specific"],
+    "reasoning": "Market research query for Amazon USA with focus on pack size preferences and consumer behavior patterns.",
+    "optimized_query": "Please conduct a comprehensive Amazon USA market analysis for Minoxidil topical solution (liquid form).\nFocus specifically on identifying which pack sizes sell the most — single bottle, 2-pack, 3-pack, 6-pack, etc.\n\nThe goal is to understand current consumer buying preferences and dominant sales formats among top-selling listings.\n\nPlease include:\n\nRanking of best-selling Minoxidil liquid listings by pack size.\n\nAverage price per pack and per bottle.\n\nCustomer feedback trends (e.g., why customers prefer multi-packs vs single).\n\nAny observable patterns in subscription purchases or Amazon \"frequently bought together\" items.\n\nThe output should help determine optimal packaging and quantity mix for launching 5,000 units in the U.S. Amazon market."
+  },
+  {
+    "id": 113,
+    "query": "Analyze the global market opportunity for a premium wooden car diffuser with a long-lasting slow-diffusion core. I want a full breakdown for USA, Canada, UK, and the Middle East. Include:\n– regional demand\n– competition analysis\n– regulatory requirements (CLP, SDS, REACH, etc.)\n– recommended pricing\n– top-selling scent profiles per region\n– shipping expectations\n– consumer pain points\n– market gaps\n– and whether this product can scale globally as a luxury brand.\nGive me clear steps on how to enter each region and how to position the brand differently in each market.\n\nOur new brands must offer long-lasting, refillable, premium natural diffusers with strict compliance and luxury positioning.",
+    "L1_primary_intent": "market_research",
+    "L2_information_need": ["trending_analysis", "competitor_analysis", "price_comparison", "platform_data", "review_analysis"],
+    "L3_constraints": ["certification_required", "region_specific", "quality_specification", "logistics_shipping"],
+    "reasoning": "Comprehensive multi-region market opportunity analysis with regulatory and quality requirements for premium product positioning.",
+    "optimized_query": "Analyze the global market opportunity for a premium wooden car diffuser with a long-lasting slow-diffusion core. I want a full breakdown for the USA, Canada, the UK, and the Middle East. Include:\n– regional demand\n– competition analysis\n– regulatory requirements (CLP, SDS, REACH, etc.)\n– recommended pricing\n– top-selling scent profiles per region\n– shipping expectations\n– consumer pain points\n– market gaps\n– and whether this product can scale globally as a luxury brand.\nGive me clear steps on how to enter each region and how to position the brand differently in each market.\n\nHow we can win the market. And our new brands must offer:\nlong-lasting, refillable, premium natural diffusers\nwith strict compliance and luxury positioning."
+  },
+  {
+    "id": 122,
+    "query": "Fais-moi une étude de marché sourcée et chiffrée sur les litières automatiques pour chats, identifie les produits les plus vendus. Étudie de manière concise et exhaustive les avis. Dégage-moi les points positifs et négatifs qu'il en ressort ainsi que les axes d'amélioration possibles et les possibilités de différenciation, et trouve-moi des fabricants fiables pour ces produits.",
+    "L1_primary_intent": "market_research",
+    "L2_information_need": ["trending_analysis", "sales_data", "review_analysis", "competitor_analysis", "supplier_evaluation"],
+    "L3_constraints": [],
+    "reasoning": "French language market research query for automatic cat litter boxes with comprehensive L2 needs including supplier evaluation.",
+    "optimized_query": "Fais-moi une étude de marché sourcée et chiffrée sur les litières automatiques pour chats, identifie les produits les plus vendus. Étudie de manière concise et exhaustive les avis. Dégage-moi les points positifs et négatifs qu'il en ressort ainsi que les axes d'amélioration possibles et les possibilités de différenciation, et trouve-moi des fabricants fiables pour ces produits.\nReformule-moi ce prompt en étant plus complet"
+  },
+  {
+    "id": 127,
+    "query": "What are the top 10 sellers right now across Amazon, eBay, TikTok, Etsy, Instagram, etc. that are NOT electronic? I repeat NOT electronic. So not power bank or earbuds, etc.",
+    "L1_primary_intent": "product_discovery",
+    "L2_information_need": ["trending_analysis", "sales_data", "platform_data"],
+    "L3_constraints": [],
+    "reasoning": "Simple product discovery query with category exclusion, seeking trending non-electronic products across multiple platforms.",
+    "optimized_query": "What are the top 10 sellers right now across Amazon, eBay, TikTok, Etsy, Instagram, etc. that are NOT electronic? I repeat NOT electronic. So not power bank or earbuds, etc."
+  },
+  {
+    "id": 135,
+    "query": "2026年，速卖通春季连衣裙流行趋势，应该怎么去判断产品的走向，需要结合什么元素去开发连衣裙产品，比如面料、图案、设计等？请结合当前流行趋势、市场动态和产品案例，分析连衣裙开发的关键要素，并推荐适合春季销售的连衣裙产品及属性。",
+    "L1_primary_intent": "product_development",
+    "L2_information_need": ["trending_analysis", "platform_data"],
+    "L3_constraints": [],
+    "reasoning": "Chinese query focused on product development for spring dresses on AliExpress, analyzing trends and design elements.",
+    "optimized_query": "2026年，速卖通春季连衣裙流行趋势，应该怎么去判断产品的走向，需要结合什么元素去开发连衣裙产品，比如面料、图案、设计等？请结合当前流行趋势、市场动态和产品案例，分析连衣裙开发的关键要素，并推荐适合春季销售的连衣裙产品及属性。"
+  },
+  {
+    "id": 138,
+    "query": "Act as a 7-figure/month organic e-commerce operator.\n\nIt is your own money, brand, and reputation on the line. You are forced to go ALL-IN on ONE product only for organic dropshipping (TikTok, Reels, Shorts — no paid ads).\n\nYour goal is to print $1,000,000+ per month in revenue using organic traffic only.\n\nFind ONE ultimate winning product you would personally choose if failure was not an option.\n\nThe product MUST:\n- Be a scroll-stopper in the first 3 seconds\n- Have a clear \"wow\" / shock / curiosity factor\n- Solve a real, painful, mass-market problem\n- Be easy to demonstrate on camera\n- Create strong emotional reaction\n- Work specifically for organic content\n- Not rely on branding, influencers, or paid ads\n- Be scalable to 7 figures monthly\n\nFor the product you choose, explain: What the product is, Why this ONE product beats all others, The core pain it solves, The viral hook angles, Why it can realistically reach $1M+/month organically.\n\nBe brutally honest. Choose only ONE product. No lists. No alternatives. No theory.",
+    "L1_primary_intent": "product_discovery",
+    "L2_information_need": ["trending_analysis", "sales_data", "review_analysis", "platform_data", "competitor_analysis"],
+    "L3_constraints": [],
+    "reasoning": "Expert-level product selection query for organic dropshipping with comprehensive analysis requirements but no explicit L3 constraints.",
+    "optimized_query": "Act as a 7-figure/month organic e-commerce operator.\n\nIt is your own money, brand, and reputation on the line. You are forced to go ALL-IN on ONE product only for organic dropshipping (TikTok, Reels, Shorts — no paid ads).\n\nYour goal is to print $1,000,000+ per month in revenue using organic traffic only.\n\nFind ONE ultimate winning product you would personally choose if failure was not an option.\n\nThe product MUST:\n\nBe a scroll-stopper in the first 3 seconds.\nHave a clear \"wow\" / shock / curiosity factor.\nSolve a real, painful, mass-market problem.\nBe easy to demonstrate on camera.\nCreate strong emotional reaction (surprise, relief, excitement).\nWork specifically for organic content.\nNot rely on branding, influencers, or paid ads.\nBe scalable to 7 figures monthly.\n\nFor the product you choose, explain:\n\nWhat the product is.\nWhy this ONE product beats all others.\nThe core pain it solves.\nThe viral hook angles that would carry organic traffic.\nWhy it can realistically reach $1M+/month organically.\n\nBe brutally honest.\nChoose only ONE product.\nNo lists. No alternatives. No theory."
+  },
+  {
+    "id": 143,
+    "query": "I live in Sri Lanka. I want top-selling best skincare products for Sri Lanka. What about vitamin C serums? I sold this Kojie San soap in Sri Lanka. I want trending products on social media, especially on TikTok and Facebook and other social media that are going viral, maybe globally as well.",
+    "L1_primary_intent": "product_discovery",
+    "L2_information_need": ["trending_analysis", "platform_data", "sales_data"],
+    "L3_constraints": ["region_specific"],
+    "reasoning": "Product discovery for Sri Lankan market with focus on social media trending products and regional specificity.",
+    "optimized_query": "I live in Sri Lanka. I want top-selling best skincare products for Sri Lanka. What about vitamin C serums? I sold this Kojie San soap in Sri Lanka. I want trending products on social media, especially on TikTok and Facebook and other social media that are going viral, maybe globally as well."
+  },
+  {
+    "id": 150,
+    "query": "I'm the manager of a women's health clothing store in Europe. I'm looking for a factory with CE certification, export experience, factory experience and good reviews, with a focus on producing menstrual underwear.",
+    "L1_primary_intent": "supplier_sourcing",
+    "L2_information_need": ["supplier_evaluation", "review_analysis"],
+    "L3_constraints": ["certification_required", "region_specific"],
+    "reasoning": "Simple supplier sourcing query for specialized women's health products with certification and regional requirements.",
+    "optimized_query": "I'm the manager of a women's health clothing store in Europe. I'm looking for a factory with CE certification, export experience, factory experience and good reviews, with a focus on producing menstrual underwear."
+  }
+]

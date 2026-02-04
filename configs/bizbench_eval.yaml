@@ -1,0 +1,150 @@
+# =============================================================================
+# Batch Evaluation Settings
+# =============================================================================
+# These settings are used by run_jade.py
+# All settings can be overridden by command line arguments
+batch:
+  # Paths
+  input_dir: "data/input"
+  output_dir: "output/base_template"
+  metadata_dir: "data/metadata"
+  
+  # Model Selection
+  # models: Comma-separated list of model names to evaluate (default: all)
+  # Example: "claude-opus-4.5_with_tool,gpt-5.2_with_tool"
+  models: "base_template" 
+  # pattern: Glob pattern to match model names
+  # Example: "*_with_tool", "gpt-*"
+  pattern: null
+  # exclude: Comma-separated list of model names to exclude
+  # Example: "gpt-4o_no_tool,claude-3-opus_no_tool"
+  exclude: null
+  # exclude_pattern: Glob pattern to exclude model names
+  # Example: "*_no_tool"
+  exclude_pattern: null
+  # Execution Settings
+  # max_workers: Number of parallel model evaluations (default: 1, sequential)
+  max_workers: 4
+  # max_items: Maximum number of items to process per model (null = all)
+  # Note: Only used if item_ids is not specified
+  max_items: 150
+  # item_ids: Specific item IDs to process (null = all items)
+  # Can be a list: [1, 2, 3, 5, 10]
+  # Or a comma-separated string: "1,2,3,5,10"
+  # Takes precedence over max_items if both are specified
+  item_ids: null
+  # resume: Skip models that already have completed evaluations (default: true)
+  resume: true
+  # dry_run: Only print what would be done without executing (default: false)
+  dry_run: false
+
+# =============================================================================
+# Checklist Prompt Settings (Ablation Experiment)
+# =============================================================================
+checklist:
+  use_skill: true
+  use_report_specific: true
+
+# =============================================================================
+# Agent Settings
+# =============================================================================
+agent:
+  agent_type: genai
+  genai_use_search: true
+  genai_use_url_context: true
+  verbose: true
+  log_dir: logs
+  output_dir: output
+  enable_logging: true
+  verify_concurrency: 5
+
+# =============================================================================
+# GenAI Settings
+# =============================================================================
+genai:
+  model_name: "${GENAI_MODEL_NAME}"
+  api_key: "${GENAI_API_KEY}"
+  base_url: "${GENAI_BASE_URL}"
+  api_version: "${GENAI_API_VERSION}"
+  custom_headers: "${GENAI_CUSTOM_HEADERS}"
+  temperature: 0.3
+  max_retries: 3
+
+# =============================================================================
+# LLM Settings (for checklist generation and scoring)
+# =============================================================================
+llm:
+  client_type: custom
+  model_name: "${LLM_MODEL_NAME}"
+  custom_api_key: "${CUSTOM_API_KEY}"
+  custom_endpoint: "${CUSTOM_ENDPOINT}"
+  custom_api_version: "${LLM_CUSTOM_API_VERSION}"
+  custom_headers: "${LLM_CUSTOM_HEADERS}"
+  max_retries: 1
+  supports_temperature: false
+  supports_max_tokens: false
+
+# =============================================================================
+# Evaluation Settings
+# =============================================================================
+evaluation:
+  # Input path will be overridden by run_jade.py
+  input_path: "data/input/base_template.json"
+  
+  # Output directory
+  output_dir: "output/base_template"
+  
+  # Rubric directory
+  multilabel_rubric_dir: "rubrics/bizbench"
+
+  # Thresholds
+  confidence_threshold: 0.7
+  
+  # Execution parameters
+  max_workers: 5
+  max_iterations: 15
+  
+  # Process all items (null = all)
+  item_ids: null
+  
+  # Output folder behavior
+  make_new_folder: false  # report_generate creates timestamped folders
+  clear_folder: false
+  
+  # Logging
+  verbose: true
+  enable_logging: true
+  
+  # Conciseness settings
+  enable_conciseness: true
+  conciseness_method: "log"
+  conciseness_alpha: 0.5
+  
+  # ==========================================================================
+  # Three-Dimensional Scoring Framework
+  # ==========================================================================
+  enable_source_credibility: true
+  
+  # Fusion mode for final score calculation:
+  # - "multiplicative": Final = D1 × D2 × D3 (all dimensions must be good)
+  # - "two_stage": Final = D1 × D2 (for ablation without credibility)
+  # - "weighted": Legacy weighted average (for backward compatibility)
+  # - "independent": Report D1, D2, D3 separately (no final score)
+  score_fusion_mode: "two_stage"
+  
+  # Legacy weights (only used in "weighted" mode)
+  reasoning_weight: 0.4
+  evidence_weight: 0.4
+  credibility_weight: 0.2
+  
+  # ==========================================================================
+  # Analysis Report Generation
+  # ==========================================================================
+  # Enable automatic generation of analysis reports for each evaluated item
+  enable_analysis: true
+  
+  # Language for analysis reports: "EN" (English) or "ZH" (Chinese)
+  analysis_language: "ZH"
+  
+  # Regenerate existing valid analysis reports (false = skip existing)
+  regenerate_analysis: false
