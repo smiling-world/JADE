@@ -115,18 +115,3 @@ python scripts/run_jade.py --config configs/bizbench_eval.yaml \
 
 ---
 
-## 📖 论文引用
-
-如果本项目对您的研究有所帮助，请引用我们的论文：
-
-```bibtex
-@article{jade2026,
-  title={JADE: Expert-Grounded Dynamic Evaluation for Open-Ended Professional Tasks},
-  author={Anonymous Authors},
-  journal={Under review by ICML},
-  year={2026}
-}
-```
-
----
-

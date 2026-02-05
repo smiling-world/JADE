@@ -120,18 +120,3 @@ python scripts/run_jade.py --config configs/bizbench_eval.yaml \
 2. You can explore the performance of the dual-layer structure in JADE by modifying the `use_skill` and `use_report_specific` attributes in `configs/bizbench_eval.yaml`. You can also try modifying `score_fusion_mode`, `reasoning_weight`, `evidence_weight`, and `credibility_weight` to explore the impact of weights on the final score.
 
 ---
-
-## 📖 Citation
-
-If this project helps your research, please cite our paper:
-
-```bibtex
-@article{jade2026,
-  title={JADE: Expert-Grounded Dynamic Evaluation for Open-Ended Professional Tasks},
-  author={Anonymous Authors},
-  journal={Under review by ICML},
-  year={2026}
-}
-```
-
----
