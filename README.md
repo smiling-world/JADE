@@ -2,7 +2,7 @@
 ---
 
 # JADE: Expert-Grounded Dynamic Evaluation for Open-Ended Professional Tasks
-[![arXiv](https://img.shields.io/badge/arXiv-2602.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2602.XXXXX)
+[![arXiv](https://img.shields.io/badge/arXiv-2602.06486-b31b1b.svg)](https://arxiv.org/abs/2602.06486)
 
 [**[中文版](README_zh.md)**] | [**English**] 
 
