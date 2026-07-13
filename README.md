@@ -1,10 +1,17 @@
-
----
+<div align="center">
 
 # JADE: Expert-Grounded Dynamic Evaluation for Open-Ended Professional Tasks
-[![arXiv](https://img.shields.io/badge/arXiv-2602.06486-b31b1b.svg)](https://arxiv.org/abs/2602.06486)
 
-[**[中文版](README_zh.md)**] | [**English**] 
+[![ICML 2026](https://img.shields.io/badge/ICML-2026-blue.svg)](https://openreview.net/forum?id=SoilRyCv1i)
+[![arXiv](https://img.shields.io/badge/arXiv-2602.06486-b31b1b.svg)](https://arxiv.org/abs/2602.06486)
+[![OpenReview](https://img.shields.io/badge/OpenReview-SoilRyCv1i-8c1b13.svg)](https://openreview.net/forum?id=SoilRyCv1i)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg)](https://www.python.org/)
+
+[**[中文版](README_zh.md)**] | [**English**]
+
+</div>
+
+> 🎉 **News**: JADE has been accepted to **ICML 2026**! Check out the paper on [OpenReview](https://openreview.net/forum?id=SoilRyCv1i) or [arXiv](https://arxiv.org/abs/2602.06486).
 
 JADE is an innovative dual-layer evaluation framework designed to assess Agent performance on complex, open-ended professional tasks (e.g., market research, strategic sourcing). It effectively addresses the "stability-adaptability" dilemma in evaluation by decoupling general expert principles from specific evidence verification.
 
@@ -23,13 +30,13 @@ Factual claims are verified via real-time web verification, while the reasoning 
 JADE evaluates the performance of various models and agents on BizBench.
 
 | Model | Type | Tool | Final (%) | Reasoning (%) | Evidence (%) | Credibility (%) | Density | Tokens |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***Agentic Deep Research Systems*** |  |  |  |  |  |  |  |  |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| _**Agentic Deep Research Systems**_ | | | | | | | | |
 | Gemini Deep Research | Prop. | ✓ | **57.1** | **63.4** | 89.1 | 43.8 | 0.063 | 7590 |
 | Shopping Research | Prop. | ✓ | 56.2 | 59.1 | **95.3** | 44.4 | 0.067 | 4772 |
 | o4-mini Deep Research | Prop. | ✓ | 47.7 | 54.5 | 87.6 | 41.2 | 0.061 | 2907 |
 | ChatGPT (Web Search) | Prop. | ✓ | 38.8 | 46.0 | 84.6 | 48.6 | 0.051 | 2244 |
-| ***API-Based Models with Tool Use*** |  |  |  |  |  |  |  |  |
+| _**API-Based Models with Tool Use**_ | | | | | | | | |
 | GPT-5.2 | Prop. | ✓ | 55.7 | 59.2 | 93.5 | **50.2** | **0.071** | 3167 |
 | DeepSeek V3.2 | Open | ✓ | 55.8 | 59.2 | 93.5 | 48.1 | 0.071 | 2877 |
 | Gemini 3 Pro | Prop. | ✓ | 41.8 | 48.5 | 86.5 | 44.7 | 0.059 | 1419 |
@@ -37,7 +44,7 @@ JADE evaluates the performance of various models and agents on BizBench.
 | Claude Sonnet 4.5 | Prop. | ✓ | 32.9 | 45.5 | 73.3 | 48.1 | 0.046 | 1975 |
 | Qwen3-Max | Open | ✓ | 34.0 | 39.9 | 83.8 | 45.5 | 0.047 | 1340 |
 | GPT-4.1 | Prop. | ✓ | 32.7 | 40.2 | 81.4 | 45.7 | 0.046 | 1434 |
-| ***API-Based Models (No Tool)*** |  |  |  |  |  |  |  |  |
+| _**API-Based Models (No Tool)**_ | | | | | | | | |
 | GPT-5.2 | Prop. | – | 49.0 | 52.6 | 93.1 | **53.7** | 0.064 | 2516 |
 | DeepSeek V3.2 | Open | – | 46.1 | 50.7 | 90.9 | 52.1 | 0.061 | 2299 |
 | Gemini 3 Pro | Prop. | – | 44.8 | 52.7 | 84.8 | 50.7 | 0.063 | 1495 |
@@ -62,8 +69,8 @@ JADE evaluates the performance of various models and agents on BizBench.
 ```bash
 # python version >= 3.10
 
-git clone https://github.com/yourusername/JADE.git
-# or 'git clone git@github.com:yourusername/JADE.git'
+git clone https://github.com/smiling-world/JADE.git
+# or 'git clone git@github.com:smiling-world/JADE.git'
 # or download the zip file and unzip
 cd JADE
 pip install -r requirements.txt
@@ -73,7 +80,7 @@ pip install -r requirements.txt
 
 ## 🚀 Quick Start
 
-Follow these three steps to quickly start using JADE to evaluate your Agent reports:
+Follow these four steps to quickly start using JADE to evaluate your Agent reports:
 
 ### 1. Configure Environment Variables
 
@@ -96,7 +103,7 @@ Template path: `data/input/base_template.json`
 
 ### 3. Run Evaluation Script
 
-```python
+```bash
 python scripts/run_jade.py --config configs/bizbench_eval.yaml
 ```
 
@@ -107,7 +114,7 @@ Results are saved in `output/base_template` by default. If you need to change th
 1. Modify the `output_dir` attribute in `configs/bizbench_eval.yaml`.
 2. Specify the output directory via command line arguments:
 
-```python
+```bash
 python scripts/run_jade.py --config configs/bizbench_eval.yaml \
     --output_dir output/base_template
 ```
@@ -120,3 +127,18 @@ python scripts/run_jade.py --config configs/bizbench_eval.yaml \
 2. You can explore the performance of the dual-layer structure in JADE by modifying the `use_skill` and `use_report_specific` attributes in `configs/bizbench_eval.yaml`. You can also try modifying `score_fusion_mode`, `reasoning_weight`, `evidence_weight`, and `credibility_weight` to explore the impact of weights on the final score.
 
 ---
+
+## 📖 Citation
+
+If you find JADE or BizBench useful in your research, please cite our paper:
+
+```bibtex
+@inproceedings{
+lin2026jade,
+title={{JADE}: Expert-Grounded Dynamic Evaluation for Open-Ended Professional Tasks},
+author={Lanbo Lin and Jiayao Liu and Tianyuan Yang and Li Cai and Yuanwu Xu and Lei Wei and Sicong Xie and Guannan Zhang},
+booktitle={Forty-third International Conference on Machine Learning},
+year={2026},
+url={https://openreview.net/forum?id=SoilRyCv1i}
+}
+```
