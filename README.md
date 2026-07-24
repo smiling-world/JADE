@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="figures/accio_logo.png" alt="Accio logo" width="160">
+
 # JADE: Expert-Grounded Dynamic Evaluation for Open-Ended Professional Tasks
 
 [![ICML 2026](https://img.shields.io/badge/ICML-2026-blue.svg)](https://openreview.net/forum?id=SoilRyCv1i)
